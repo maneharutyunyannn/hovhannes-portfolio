@@ -2,6 +2,7 @@ import {NavigationMenuComponent} from "@/components/layout/navigation-menu";
 import {cn} from "@/lib/utils";
 import {ButtonLink} from "@/components/ui/button-link";
 import {footerNavItems} from "@/lib/configs/site";
+import {NavList} from "@/components/layout/navigation-list";
 
 export function Footer() {
     return (
@@ -21,7 +22,7 @@ export function Footer() {
                     <h3 className="font-semibold text-[#B5A091] text-[20px]">Hovhannes Harutyunyan</h3>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-[25px] lg:gap-[24px] justify-center items-start">
+                <div className="flex flex-col lg:flex-row gap-[25px] lg:gap-[24px] justify-center items-start lg:items-center">
                     <div className="lg:hidden w-full">
                         <NavigationMenuComponent
                             items={footerNavItems}
@@ -31,8 +32,8 @@ export function Footer() {
                         />
                     </div>
 
-                    <div className="hidden lg:block">
-                        <NavigationMenuComponent items={footerNavItems}/>
+                    <div className="hidden lg:block ">
+                        <NavList items={footerNavItems}/>
                     </div>
 
                     <ButtonLink className="mx-auto"/>

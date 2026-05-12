@@ -19,9 +19,8 @@ export function NavigationMenuComponent({
                                             items,
                                             isMobile,
                                             menuLinkClassName,
-                                            className
+                                            className,
 }: Props) {
-
     if (isMobile) {
         return (
             <ul
