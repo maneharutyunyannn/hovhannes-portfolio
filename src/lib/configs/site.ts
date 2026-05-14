@@ -4,9 +4,9 @@ export interface INavItem {
 }
 
 export const mainNavItems: INavItem[] = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "/#services" },
-    { label: "Projects", href: "/#projects" },
+    { label: "Գլխավոր", href: "/" },
+    { label: "Ծառայություններ", href: "/#services" },
+    { label: "Նախագծեր", href: "/#projects" },
 ];
 
 export const footerNavItems: INavItem[] = mainNavItems;

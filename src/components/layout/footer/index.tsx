@@ -19,8 +19,10 @@ export function Footer() {
                         "max-w-96 mx-auto md:mx-0"
                     )}
                 >
-                    <h3 className="font-semibold text-[#B5A091] text-[20px]">Hovhannes Harutyunyan</h3>
-                </div>
+                    <h3 className=" font-bold text-[#B5A091] text-[24px] italic">
+                        Արտ
+                        <span className="font-semibold ">Հաուս</span>
+                    </h3></div>
 
                 <div className="flex flex-col lg:flex-row gap-[25px] lg:gap-[24px] justify-center items-start lg:items-center">
                     <div className="lg:hidden w-full">
@@ -41,7 +43,9 @@ export function Footer() {
             </div>
 
             <div className="text-sm text-[#ECE2D9] text-center md:text-end pt-4 md:pt-0">
-                <p className="leading-[24.5px]">© 2026 Hovhannes Harutyunyan. All rights reserved.</p>
+                <p className="leading-[24.5px]">
+                    © 2026 ԱրտՀաուս, Բոլոր իրավունքները պաշտպանված են։
+                </p>
             </div>
         </footer>
     );

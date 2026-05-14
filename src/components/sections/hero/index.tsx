@@ -26,13 +26,15 @@ export function HeroSection() {
             />
 
             <div className={cn(
-                "relative z-10 max-w-2xl text-white transition-opacity duration-300 ",
+                "relative z-10 max-w-xl text-white transition-opacity duration-300 ",
                 "flex flex-col gap-8 mx-6 md:mx-[116px] pt-[52.5px] md:py-[10.413rem]",
                 isOpen && "opacity-0 "
             )}>
-                <Heading className="text-[#ECE2D9]">Transforming Houses into Homes</Heading>
-                <p className="text-[#ECE2D9] text-[1rem] md:text-[24px] font-medium">Quality renovations with attention
-                    to every detail</p>
+                <Heading className="text-[#ECE2D9]">Ձեր տունը՝ սիրով ու հարմարավետությամբ
+                </Heading>
+                <p className="text-[#ECE2D9] text-[1rem] md:text-[18px] font-medium">
+                    Որակ, ճշգրտություն և ուշադրություն յուրաքանչյուր դետալին
+                </p>
 
                 <ButtonLink visible={!isOpen}
                             className="!h-12 bg-[#2A1F18]"

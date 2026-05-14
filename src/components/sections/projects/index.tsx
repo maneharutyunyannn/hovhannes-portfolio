@@ -17,7 +17,7 @@ export function ProjectsSection() {
         <section className="py-4 md:py-10 bg-[#ECE2D9] rounded-[2rem]" id="projects">
             <div className="max-w-6xl mx-auto px-6">
                 <Heading as="h2" className="text-center mb-6 md:mb-12 text-[#18120E]">
-                    Selected Apartments
+                    Մեր նախագծերը
                 </Heading>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

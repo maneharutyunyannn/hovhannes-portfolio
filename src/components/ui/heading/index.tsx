@@ -25,13 +25,13 @@ const Heading: FC<IHeadingProps & HeadingProps> = (
             className={clsx(
                 [
                     as === "h1" && [
-                        "text-[45px] leading-[54px]",
+                        "text-[28px] leading-[28px]",
                         "sm:text-[56px] sm:leading-[67px]",
                         "md:text-[70px] md:leading-[75px]",
                         libreBaskerville.className
                     ],
                     (as === "h2") && [
-                        "text-[40px] sm:text-[48px] md:text-[52px]",
+                        "text-[24px] sm:text-[48px] md:text-[52px]",
                         // merriweather.className
                     ],
                     (as === "h3") && "text-[25px] sm:text-[29px] mdu:text-[32px]",

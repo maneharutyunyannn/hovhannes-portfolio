@@ -4,4 +4,5 @@ export type ApartmentMedia =
 
 export type Apartment = {
     media: ApartmentMedia[];
+    address: string
 };

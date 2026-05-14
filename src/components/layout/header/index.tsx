@@ -22,7 +22,10 @@ export function Header() {
                     isOpen && "bg-transparent",
                 )}
             >
-                <h1 className="font-semibold text-[#B5A091] text-[20px]">Hovhannes Harutyunyan</h1>
+                <h1 className=" font-bold text-[#B5A091] text-[24px] italic">
+                    Արտ
+                    <span className="font-semibold ">Հաուս</span>
+                </h1>
 
                 <div className="hidden lg:flex gap-[29px]">
                     <NavigationMenuComponent items={mainNavItems}/>

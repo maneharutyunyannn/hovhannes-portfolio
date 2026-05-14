@@ -52,17 +52,18 @@ export function ReachOutSection() {
 
     return (
         <section className="px-5 md:px-20 py-4 md:py-10" id="reach-out">
-            <Heading as="h2" className="text-[#18120E] ">Contact Me</Heading>
+            <Heading as="h2" className="text-[#18120E] ">Հետադարձ կապ</Heading>
 
             <div className="flex flex-col md:flex-row">
                 <div className="flex-1 pb-4 md:pb-0">
-                    <p className="text-[#18120E] ">Feel ready to reach out through any of these channels.</p>
                     <div className="space-y-6 pt-6 md:pt-14">
                         <div className="flex gap-2">
                             <Mail width={15} height={15}/>
                             <div className="flex flex-col items-start">
                                 <span
-                                    className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">Email</span>
+                                    className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">
+                                    Էլ․ փոստ
+                                </span>
                                 <span className="block">hovoh9911@gmail.com</span>
                             </div>
                         </div>
@@ -70,7 +71,7 @@ export function ReachOutSection() {
                             <Phone width={15} height={15}/>
                             <div className="flex flex-col items-start">
                             <span
-                                className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">Phone</span>
+                                className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">Հեռախոսահամար</span>
                                 <span className="block">+374 41 044 410</span>
                             </div>
                         </div>
@@ -78,8 +79,9 @@ export function ReachOutSection() {
                             <MapPin width={15} height={15}/>
                             <div className="flex flex-col items-start">
                             <span
-                                className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">Location</span>
-                                <span className="block">Yerevan, Armenia</span>
+                                className="block font-semibold text-[#18120E] text-center text-[16px] leading-[16px]">Գտնվելու վայր
+</span>
+                                <span className="block">Երևան, Հայաստան</span>
                             </div>
                         </div>
                     </div>
@@ -90,63 +92,62 @@ export function ReachOutSection() {
                         className="p-8 border border-[#18120E] rounded-lg"
                     >
                         <FieldGroup className="gap-[17px] md:gap-6 max-w-[600px]">
-                        <FieldSet className="text-[#000E21]">
-                            <div className="flex flex-col md:flex-row gap-6 md:gap-2">
-                                <Text
-                                    inputClassName="h-12"
-                                    className="gap-2"
-                                    name="first_name"
-                                    label="First Name"
-                                    required
-                                    control={form.control}
-                                />
-                                <Text inputClassName="h-12"
-                                      className="gap-2"
-                                      name="last_name"
-                                      label="Last Name"
-                                      control={form.control}
-                                />
-                            </div>
+                            <FieldSet className="text-[#000E21]">
+                                <div className="flex flex-col md:flex-row gap-6 md:gap-2">
+                                    <Text
+                                        inputClassName="h-12"
+                                        className="gap-2"
+                                        name="first_name"
+                                        label="Անուն"
+                                        required
+                                        control={form.control}
+                                    />
+                                    <Text inputClassName="h-12"
+                                          className="gap-2"
+                                          name="last_name"
+                                          label="Ազգանուն"
+                                          control={form.control}
+                                    />
+                                </div>
 
-                            <div className="flex flex-col md:flex-row gap-6 md:gap-2">
-                                <Text inputClassName="h-12 "
-                                      className="gap-2"
-                                      name="email"
-                                      label="Email"
-                                      required
-                                      control={form.control}
-                                />
-                                <Text inputClassName="h-12"
-                                      className="gap-2"
-                                      name="phone_number"
-                                      label="Phone Number"
-                                      required
-                                      control={form.control}
-                                />
-                            </div>
+                                <div className="flex flex-col md:flex-row gap-6 md:gap-2">
+                                    <Text inputClassName="h-12 "
+                                          className="gap-2"
+                                          name="email"
+                                          label="Էլ․ փոստ"
+                                          required
+                                          control={form.control}
+                                    />
+                                    <Text inputClassName="h-12"
+                                          className="gap-2"
+                                          name="phone_number"
+                                          label="Հեռախոսահամար"
+                                          required
+                                          control={form.control}
+                                    />
+                                </div>
 
-                            <div className="">
-                                <Textarea
-                                    className="gap-2 !text-[1rem] font-normal"
-                                    name="message"
-                                    label="Message"
-                                    required
-                                    inputClassName="h-26"
-                                    placeholder="Type your message..."
-                                    control={form.control}
-                                />
+                                <div className="">
+                                    <Textarea
+                                        className="gap-2 !text-[1rem] font-normal"
+                                        name="message"
+                                        label="Հաղորդագրություն"
+                                        required
+                                        inputClassName="h-26"
+                                        control={form.control}
+                                    />
+                                </div>
+                            </FieldSet>
+                            <div className="flex justify-center md:justify-start">
+                                <Button disabled={!isValid || pending}
+                                        className={cn("w-fit text-[1rem] py-[10px] px-[100px] md:px-6 h-11",
+                                        )}
+                                        type="submit">
+                                    {pending && <Spinner/>}
+                                    Ուղարկել
+                                </Button>
                             </div>
-                        </FieldSet>
-                        <div className="flex justify-center md:justify-start">
-                            <Button disabled={!isValid || pending}
-                                    className={cn("w-fit text-[1rem] py-[10px] px-[100px] md:px-6 h-11",
-                                    )}
-                                    type="submit">
-                                {pending && <Spinner/>}
-                                Submit
-                            </Button>
-                        </div>
-                    </FieldGroup>
+                        </FieldGroup>
                     </form>
                 </div>
             </div>
